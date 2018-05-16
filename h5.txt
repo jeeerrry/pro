@@ -1,0 +1,28 @@
+1.音频标签属性
+<video width="500" height="400" controls>
+  <source src="movie.mp4" type="video/mp4">
+ <!-- <source src="movie.ogg" type="video/ogg"> -->
+  你的浏览器不支持 video 标签。
+</video>
+2.document.createElement("mtHero"); //创造新的元素  <mtHero>我的第一个新元素</mtHero>
+3.可以在 <audio> 和 </audio> 之间放置文本内容，这些文本信息将会被显示在那些不支持 <audio> 标签的浏览器中
+  <audio controls>
+  <source src="horse.ogg" >
+  <source src="horse.mp3" >
+您的浏览器不支持 audio 元素。
+</audio>
+4.<canvas> 标签只是图形容器，您必须使用脚本来绘制图形。
+<canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+您的浏览器不支持 HTML5 canvas 标签。</canvas>
+<script>
+var c=document.getElementById("myCanvas");
+var ctx=c.getContext("2d");
+ctx.fillStyle="#FF0000";  //用红色填充
+ctx.fillRect(0,0,150,75);//填充的矩形大小
+ctx.moveTo(0,0); // 划线的起始段
+ctx.lineTo(200,100);  //划线的末端
+ctx.stroke();  //开始划线这个动作
+</script
+
+
+
